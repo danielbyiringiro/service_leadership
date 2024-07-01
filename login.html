@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+   
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
+    <title>Sign In</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+        <p>or sign in with</p>
+        <button class="btn btn-google" id="googleSignInBtn">Sign in with Google</button>
+        <button class="btn btn-facebook" id="facebookSignInBtn">Sign in with Facebook</button>
+        <button class="btn btn-github" id="githubSignInBtn">Sign in with GitHub</button>
+    </div>
+
+
+ <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, FacebookAuthProvider, GithubAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDGEGT3RedbpTtl8TdzZtoAG38BupTC8WI",
+      authDomain: "unighana-90249.firebaseapp.com",
+      projectId: "unighana-90249",
+      storageBucket: "unighana-90249.appspot.com",
+      messagingSenderId: "1021246419153",
+      appId: "1:1021246419153:web:f1c694317f271e29e755f0"
+    };
+  
+    
+
+
+
+    
+    //Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Handle Google sign in
+        document.getElementById('googleSignInBtn').addEventListener('click', function() {
+            const provider = new GoogleAuthProvider();
+            signInWithPopup(auth, provider)
+                .then((result) => {
+                    const user = result.user;
+                    alert(`Hello, ${user.displayName}`);
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(`Error: ${errorMessage}`);
+                });
+        });
+
+        // Handle Facebook sign in
+        document.getElementById('facebookSignInBtn').addEventListener('click', function() {
+            const provider = new FacebookAuthProvider();
+            signInWithPopup(auth, provider)
+                .then((result) => {
+                    const user = result.user;
+                    alert(`Hello, ${user.displayName}`);
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(`Error: ${errorMessage}`);
+                });
+        });
+
+        // Handle GitHub sign in
+        document.getElementById('githubSignInBtn').addEventListener('click', function() {
+            const provider = new GithubAuthProvider();
+            signInWithPopup(auth, provider)
+                .then((result) => {
+                    const user = result.user;
+                    alert(`Hello, ${user.displayName}`);
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(`Error: ${errorMessage}`);
+                });
+        });
+
+  </script>
+ 
+ 
+ 
+</body>
+
+</html>
