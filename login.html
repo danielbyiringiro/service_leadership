@@ -41,7 +41,7 @@
   
     // Your web app's Firebase configuration
     const firebaseConfig = {
-      apiKey: "AIzaSyDGEGT3RedbpTtl8TdzZtoAG38BupTC8WI",
+      apiKey: "*****************",
       authDomain: "unighana-90249.firebaseapp.com",
       projectId: "unighana-90249",
       storageBucket: "unighana-90249.appspot.com",
@@ -50,15 +50,12 @@
     };
   
     
-
-
-
     
-    //Initialize Firebase
+       //Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
 
-        // Handle Google sign in
+        // google sign up 
         document.getElementById('googleSignInBtn').addEventListener('click', function() {
             const provider = new GoogleAuthProvider();
             signInWithPopup(auth, provider)
@@ -73,35 +70,7 @@
                 });
         });
 
-        // Handle Facebook sign in
-        document.getElementById('facebookSignInBtn').addEventListener('click', function() {
-            const provider = new FacebookAuthProvider();
-            signInWithPopup(auth, provider)
-                .then((result) => {
-                    const user = result.user;
-                    alert(`Hello, ${user.displayName}`);
-                })
-                .catch((error) => {
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-                    alert(`Error: ${errorMessage}`);
-                });
-        });
-
-        // Handle GitHub sign in
-        document.getElementById('githubSignInBtn').addEventListener('click', function() {
-            const provider = new GithubAuthProvider();
-            signInWithPopup(auth, provider)
-                .then((result) => {
-                    const user = result.user;
-                    alert(`Hello, ${user.displayName}`);
-                })
-                .catch((error) => {
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-                    alert(`Error: ${errorMessage}`);
-                });
-        });
+    
 
   </script>
  
