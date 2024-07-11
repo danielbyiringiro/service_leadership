@@ -1,10 +1,15 @@
 import './Home.css'
 import UniGhanaLogo from '../assets/unighana.png'
+import FacebookLogo from '../assets/facebook_icon.png'
+import WhatsappLogo from '../assets/whatsapp_icon.png'
+import YoutubeLogo from '../assets/youtube_icon.png'
 import HomeImage from '../assets/home_image.png'
 import Ashesi from '../assets/ashesi.png'
 import KNUST from '../assets/knust.png'
 import Legon from '../assets/legon.png'
 import Academic from '../assets/academic_city.png'
+import BottomImage from '../assets/botton_image.png'
+import BelowImage from '../assets/below_image.png'
 import { Link } from "react-router-dom"
 import Signin from './Signin'
 
@@ -61,6 +66,42 @@ export default () =>
                             <p className="university-description">Explore the premier university with us now. From its campus to programs offered.</p>
                             <img src={Legon} alt="University of Ghana" />
                         </div>
+                    </div>
+                    <p id="see_more">See More Universities {'>'}{'>'}{'>'}</p>
+                </div>
+                <div className='bottom'>
+                    <div className='left'>
+                        <p id="head">Get Funded Now</p>
+                        <p>Your path to tertiary education is clearer</p>
+                        <p>than ever. Explore the numerous scholarships</p>
+                        <p>available now.</p>
+                        <button id="bottom_button">See More</button>
+                    </div>
+                    <div className='right'>
+                        <img id="image_bottom" src={BottomImage}/>
+                    </div>
+                </div>
+                <div className='below'>
+                    <div className='left'>
+                        <p id="head">Excited about university?</p>
+                        <button id="below_button">Join our community</button>
+                    </div>
+                    <div className='right'>
+                        <img id="image_below" src={BelowImage}/>
+                    </div>
+                </div>
+                <div className='footer'>
+                    <div className='footer_logo'>
+                        <img id="footer_image" src={UniGhanaLogo} className='logo'/>
+                        <p id="footer_text">UniGhana</p>
+                    </div>
+                    <p id="first" className='footer_paragraph'>Sources</p>
+                    <p className='footer_paragraph'>About Us</p>
+                    <p className='footer_paragraph'>Terms and Conditions</p>
+                    <div className='media'>
+                        <img id="first_logo" src={FacebookLogo} className='icon'/>
+                        <img src={WhatsappLogo} className='icon'/>
+                        <img src={YoutubeLogo} className='icon'/>
                     </div>
                 </div>
             </div>
