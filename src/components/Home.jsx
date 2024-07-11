@@ -11,27 +11,14 @@ import Academic from '../assets/academic_city.png'
 import BottomImage from '../assets/botton_image.png'
 import BelowImage from '../assets/below_image.png'
 import { Link } from "react-router-dom"
-import Signin from './Signin'
+import Header from './Header'
 
 export default () =>
     {
         return(
             <>
             <div>
-                <div className='Header'>
-                    <div className='div_logo'>
-                        <img src={UniGhanaLogo} className='logo'></img>
-                        <p id="logo_text">UniGhana</p>
-                    </div>
-                    <div className='header_middle'>
-                        <Link className='link' to='/universitysearch'>University Search</Link>
-                        <Link className='link' to="/scholarship">Scholarships</Link>
-                        <Link className='link' to="/gallery">Gallery</Link>
-                    </div>
-                    <div className='header_last'>
-                        <p className="link" id="login_text"><Signin/></p>
-                    </div>
-                </div>
+                <Header/>
                 <div className='Middle'>
                     <div className='image-container'>
                         <img src={HomeImage}/>
