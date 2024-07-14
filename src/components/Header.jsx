@@ -1,5 +1,7 @@
 import Signin from "./Signin"
 import UniGhanaLogo from '../assets/unighana.png'
+import Search from '../assets/search.png'
+
 import { Link } from "react-router-dom"
 
 export default () =>
@@ -16,6 +18,7 @@ export default () =>
                 <Link className='link' to="/gallery">Gallery</Link>
             </div>
             <div className='header_last'>
+                 <img src={Search} className='logo'></img>
                 <p className="link" id="login_text"><Signin/></p>
             </div>
         </div>
