@@ -13,12 +13,13 @@ export default () =>
                 <p id="logo_text">UniGhana</p>
             </div>
             <div className='header_middle'>
+                <Link className='link' to='/home'>Home</Link>
                 <Link className='link' to='/academic'>University Search</Link>
                 <Link className='link' to="/scholarship">Scholarships</Link>
                 <Link className='link' to="/gallery">Gallery</Link>
             </div>
             <div className='header_last'>
-                 <img src={Search} className='logo'></img>
+                 <img src={Search} className='search'></img>
                 <p className="link" id="login_text"><Signin/></p>
             </div>
         </div>
