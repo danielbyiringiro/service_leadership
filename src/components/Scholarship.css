@@ -1,4 +1,4 @@
-#big_text
+#scholarship_big_text
 {
     color: black;
     font-size: 25px;
@@ -6,39 +6,39 @@
     background-color: white;
 }
 
-.last
+.scholarship_last
 {
     display: flex;
     flex-direction: row;
 }
 
-.left
+.scholarship_left
 {
     width: 20%;
     background-color: white;
     margin-left: 20px;
 }
 
-.right
+.scholarship_right
 {
     width: 80%;
 }
 
-#first_p
+#scholarship_first_p
 {
     font-size: 16px;
     color: purple;
     font-weight: bold;
 }
 
-#second_p, #third_p
+#scholarship_second_p, #scholarship_third_p
 {
     font-size: 16px;
     color: black;
     font-weight: bold;
 }
 
-#search_icon
+#scholarship_search_icon
 {
     height: 15px;
     width: 15px;
@@ -50,13 +50,13 @@
     transform: translate(450%, -50%);
 }
 
-.image_container
+.scholarship_image_container
 {
     position: relative;
     display: inline-block;
 }
 
-#search
+#scholarship_search
 {
     border-radius: 30px;
     height: 15px;
