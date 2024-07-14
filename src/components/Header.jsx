@@ -11,7 +11,7 @@ export default () =>
                 <p id="logo_text">UniGhana</p>
             </div>
             <div className='header_middle'>
-                <Link className='link' to='/universitysearch'>University Search</Link>
+                <Link className='link' to='/academic'>University Search</Link>
                 <Link className='link' to="/scholarship">Scholarships</Link>
                 <Link className='link' to="/gallery">Gallery</Link>
             </div>

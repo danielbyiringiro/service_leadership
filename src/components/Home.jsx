@@ -26,7 +26,7 @@ export default () =>
                             <p id="middle_text_first">Higher Education</p>
                             <p id="middle_text_second">-at your doorstep</p>
                             <p id="middle_text_third">Explore your future with us now. No more waiting.</p>
-                            <button id="middle_button">Get Started</button>
+                            <button id="middle_button"><Link className="link" to="/signin">Ashesi University</Link></button>
                         </div>
                     </div>
                 </div>

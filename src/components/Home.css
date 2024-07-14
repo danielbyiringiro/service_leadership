@@ -1,137 +1,101 @@
-.Header
-{
+.Header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
-.logo
-{
+.logo {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.search
-{
+.search {
     width: 25px;
     height: 25px;
 }
 
-.div_logo
-{
-    margin-left: 50px;
+.div_logo {
+    margin-left: 5%;
     align-items: center;
 }
-.header_last
-{
-    margin-right: 50px;
+
+.header_last {
+    margin-right: 5%;
 }
 
-.div_logo, .header_middle, .header_last
-{
+.div_logo, .header_middle, .header_last {
     display: flex;
     flex-direction: row;
 }
 
-.header_middle
-{
+.header_middle {
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
 }
 
-.header_last
-{
-    align-items: center;
-}
-
-#login_text
-{
-    font-size: 16px;
+#login_text {
+    font-size: 1rem;
     font-weight: bold;
     margin-left: 10px;
 }
 
-#logo_text
-{
+#logo_text {
     color: purple;
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
-.link
-{
+.link {
     text-decoration: none;
     color: black;
 }
 
-.link:hover
-{
+.link:hover {
     color: purple;
 }
 
-.image-container 
-{
+.image-container {
     position: relative;
     display: inline-block;
     text-align: center;
 }
 
-.image-container img 
-{
+.image-container img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.image-container .overlay-text
-{
+.image-container .overlay-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-135%, -50%);
+    transform: translate(-50%, -50%);
     font-family: Arial, sans-serif;
-    padding: 10px; 
+    padding: 10px;
     border-radius: 5px;
-    justify-content: left; 
 }
 
-.overlay-text
-{
-    justify-content: left;
-}
-
-#middle_text_first
-{
-    font-size: 30px;
+#middle_text_first, #middle_text_second {
+    font-size: 2rem;
     font-weight: bold;
     color: white;
     text-align: left;
 }
 
-#middle_text_second
-{
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    margin-top: -25px;
-    text-align: left;
+#middle_text_third {
+    font-size: 1.0625rem;
 }
 
-#middle_text_third
-{
-    font-size: 17px;
-    margin-top: -20px;
-}
-
-#middle_button
-{
+#middle_button {
     background-color: purple;
     color: white;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: bold;
     border-radius: 10px;
     padding: 7px;
@@ -140,57 +104,49 @@
     cursor: pointer;
 }
 
-.Last 
-{
+.Last {
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#last_first 
-{
-    font-size: 30px;
+#last_first {
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 10px;
-    position: relative; 
+    position: relative;
     display: inline-block;
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
 }
 
-#last_first::before, #last_first::after 
-{
+#last_first::before, #last_first::after {
     content: "";
     position: absolute;
     bottom: -2px;
-    height: 3px; 
-    border-radius: 1px; 
+    height: 3px;
+    border-radius: 1px;
 }
 
-#last_first::before 
-{
+#last_first::before {
     left: 0;
-    width: 23%; 
-    transform: translate(110%, 0);
+    width: 20%;
     background-color: orange;
 }
 
-#last_first::after 
-{
+#last_first::after {
     right: 0;
-    width: 15%; 
+    width: 20%;
     background-color: red;
 }
 
-.university-grid 
-{
+.university-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 150px;
+    grid-gap: 50px;
     margin: 10px;
 }
 
-.university-card 
-{
+.university-card {
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -199,207 +155,163 @@
     position: relative;
 }
 
-.university-card img 
-{
+.university-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.university-name 
-{
-    font-size: 20px;
+.university-name {
+    font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 10px;
     text-decoration: none;
     color: black;
 }
 
-.university-description 
-{
-    font-size: 18px;
+.university-description {
+    font-size: 1.125rem;
     margin-bottom: 10px;
 }
 
-.ashesi 
-{
-    border-left: 10px solid #FFD700; /* Gold */
-    border-bottom: 10px solid #FFD700;
-    border-right: 1px solid #FFD700;
+.ashesi, .knust, .academic, .legon {
+    border-left: 10px solid currentColor;
+    border-bottom: 10px solid currentColor;
+    border-right: 1px solid currentColor;
 }
 
-.knust 
-{
-    border-left: 10px solid #1E90FF; /* Dodger Blue */
-    border-bottom: 10px solid #1E90FF;
-    border-right: 1px solid #1E90FF;
-}
-
-.academic 
-{
-    border-left: 10px solid #DC143C; /* Crimson */
-    border-bottom: 10px solid #DC143C; /* Crimson */
-    border-right: 1px solid #DC143C; /* Crimson */
-    margin-top: -50px;
-}
-
-.legon 
-{
-    border-left: 10px solid #800080; /* Purple */
-    border-bottom: 10px solid #800080; /* Purple */
-    border-right: 1px solid #800080; /* Purple */
-    margin-top: -50px;
-}
-
-#see_more
-{
+#see_more {
     color: royalblue;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     text-align: right;
     margin-top: 60px;
 }
 
-.bottom
-{
+.bottom, .below {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
     background-color: #14275A;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.bottom .left
-{
-    color: white;
-    margin-left: 16%;
-    font-size: 17px;
-}
-
-.bottom .right
-{
-    margin-right: 13%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.below
-{
+.below {
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.below .right
-{
-    margin-right: 13%;
+.bottom .left, .below .left {
+    font-size: 1.0625rem;
+    margin-left: 5%;
+}
+
+.bottom .right, .below .right {
+    margin-right: 5%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.below .left
-{
-    color: black;
-    margin-left: 16%;
-    font-size: 17px;
-    align-self: center;
-}
-
-#head 
-{
-    font-size: 25px;
+#head {
+    font-size: 1.5625rem;
     font-weight: bold;
 }
 
-#image_bottom
-{
-    width: 400px;
+#image_bottom, #image_below {
+    width: 100%;
 }
 
-#image_below
-{
-    width: 300px;
-    border-left: 50px solid royalblue;
-    border-top: 10px solid royalblue;
-    border-bottom: 10px solid royalblue;
-    border-radius: 10px;
-}
-
-#bottom_button
-{
-    background-color: white;
-    color: black;
+#bottom_button, #below_button {
     border-radius: 10px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
-#below_button
-{
+#bottom_button {
+    background-color: white;
+    color: black;
+}
+
+#below_button {
     background-color: purple;
     color: white;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bold;
 }
 
-.footer
-{
+.footer {
     background-color: #0D1F39;
     color: white;
 }
 
-.footer_logo
-{
+.footer_logo {
     display: flex;
     flex-direction: row;
 }
 
-#footer_text
-{
-    font-size: 20px;
+#footer_text {
+    font-size: 1.25rem;
     font-weight: bold;
     margin-left: 10px;
     margin-top: 35px;
 }
 
-#footer_image
-{
+#footer_image {
     margin-top: 20px;
     margin-left: 30px;
 }
 
-#first
-{
+#first {
     margin-top: 40px;
 }
-.footer_paragraph
-{
+
+.footer_paragraph {
     margin-left: 30px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
-.icon
-{
+.icon {
     width: 30px;
     height: 30px;
     margin-left: 20px;
 }
 
-.media
-{
+.media {
     margin-top: 100px;
 }
 
-#first_logo
-{
+#first_logo {
     margin-left: 30px;
 }
 
-body, html
-{
+body, html {
     margin: 0;
     padding: 0;
+}
+
+
+@media (max-width: 600px) {
+    .Header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .div_logo, .header_middle, .header_last {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    .search {
+        width: 20px;
+        height: 20px;
+    }
+    .header_last {
+        margin-right: 20px;
+    }
+    .university-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
 }

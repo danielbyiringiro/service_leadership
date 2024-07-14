@@ -1,8 +1,14 @@
+import Header from './Header'
+import { Link } from "react-router-dom"
+
 export default () =>
     {
         return(
+            
             <div>
-                <h1>Scholarship</h1>
+        
+                 <Header/>
+                <h1>Sholarship</h1>
             </div>
         )
     }
