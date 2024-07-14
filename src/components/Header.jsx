@@ -8,7 +8,7 @@ export default () =>
         <div className='Header'>
             <div className='div_logo'>
                 <img src={UniGhanaLogo} className='logo'></img>
-                <p id="logo_text">UniGhana</p>
+                <Link to="/" id="logo_text">UniGhana</Link>
             </div>
             <div className='header_middle'>
                 <Link className='link' to='/universitysearch'>University Search</Link>

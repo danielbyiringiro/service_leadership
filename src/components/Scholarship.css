@@ -1,0 +1,66 @@
+#big_text
+{
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: white;
+}
+
+.last
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.left
+{
+    width: 20%;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.right
+{
+    width: 80%;
+}
+
+#first_p
+{
+    font-size: 16px;
+    color: purple;
+    font-weight: bold;
+}
+
+#second_p, #third_p
+{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+#search_icon
+{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(450%, -50%);
+}
+
+.image_container
+{
+    position: relative;
+    display: inline-block;
+}
+
+#search
+{
+    border-radius: 30px;
+    height: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    position: relative;
+}
