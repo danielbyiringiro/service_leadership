@@ -20,25 +20,23 @@ const Footer = () => {
       <div className="footer-content">
         <div className="company-info">
           <div className="logo">UniGhana</div>
-          <p>Design amazing digital experiences that create more happy in the world.</p>
+           <image src = {UniGhanaLogo} class = "logo"></image>
+           <img src={UniGhanaLogo} className='logo'></img>
+          <p>Invest in your brain by attending the best University here I Ghana.</p>
         </div>
         <div className="footer-links">
           <div className="column">
             <h3>Product</h3>
             <a href="#">Overview</a>
-            <a href="#">Features</a>
             <a href="#">Solutions <span className="new">New</span></a>
             <a href="#">Tutorials</a>
             <a href="#">Pricing</a>
-            <a href="#">Releases</a>
           </div>
           <div className="column">
             <h3>Company</h3>
             <a href="#">About us</a>
             <a href="#">Careers</a>
             <a href="#">Press</a>
-            <a href="#">News</a>
-            <a href="#">Media kit</a>
             <a href="#">Contact</a>
           </div>
           <div className="column">
@@ -47,8 +45,6 @@ const Footer = () => {
             <a href="#">Newsletter</a>
             <a href="#">Events</a>
             <a href="#">Help centre</a>
-            <a href="#">Tutorials</a>
-            <a href="#">Support</a>
           </div>
           <div className="column">
             <h3>Social</h3>
@@ -57,14 +53,12 @@ const Footer = () => {
             <a href="#">Facebook</a>
             <a href="#">Whatsapp</a>
             <a href="#">Youtube</a>
-            <a href="#">Dribbble</a>
+         
           </div>
           <div className="column">
             <h3>Legal</h3>
             <a href="#">Terms</a>
             <a href="#">Privacy</a>
-            <a href="#">Cookies</a>
-            <a href="#">Licenses</a>
             <a href="#">Settings</a>
             <a href="#">Contact</a>
           </div>

@@ -1,5 +1,6 @@
 import Header from './Header'
 import { Link } from "react-router-dom"
+import Footer from './Footer'
 
 export default () =>
     {
@@ -9,6 +10,7 @@ export default () =>
         
                  <Header/>
                 <h1>Sholarship</h1>
+                <Footer/>
             </div>
         )
     }
