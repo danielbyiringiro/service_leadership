@@ -1,0 +1,91 @@
+.landing-container {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #2e2e2e;
+    padding: 20px;
+  }
+  
+  .landing-header {
+    text-align: center;
+  }
+  
+  .landing-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .view-demos-button {
+    background-color: #6565f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .landing-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .main-image {
+    width: 50%;
+    height: 300px;
+    background-image: url('main-image.png'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  
+  .ideas-section {
+    width: 40%;
+  }
+  
+  .ideas-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .ideas-section p {
+    margin: 20px 0;
+  }
+  
+  .founders-avatars {
+    display: flex;
+    align-items: center;
+  }
+  
+  .founders-avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .projects-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .project-card {
+    width: 23%;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-card button {
+    background-color: #6565f2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

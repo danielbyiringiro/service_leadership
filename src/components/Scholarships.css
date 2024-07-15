@@ -1,0 +1,57 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .header {
+    background: #6a0dad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .nav a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+  .login {
+    margin-left: auto;
+  }
+  
+  .sidebar {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .financial-aid {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .financial-aid img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .financial-aid .title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    padding: 10px 20px;
+    font-size: 24px;
+  }

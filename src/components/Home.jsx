@@ -12,11 +12,10 @@ import BottomImage from '../assets/botton_image.png'
 import BelowImage from '../assets/below_image.png'
 import { Link } from "react-router-dom"
 import Header from './Header'
-
+import Footer from './Footer'
 export default () =>
     {
         return(
-            <>
             <div>
                 <Header/>
                 <div className='Middle'>
@@ -26,7 +25,7 @@ export default () =>
                             <p id="middle_text_first">Higher Education</p>
                             <p id="middle_text_second">-at your doorstep</p>
                             <p id="middle_text_third">Explore your future with us now. No more waiting.</p>
-                            <button id="middle_button">Get Started</button>
+                            <button id="middle_button"><Link className="link" to="/signin">Ashesi University</Link></button>
                         </div>
                     </div>
                 </div>
@@ -77,21 +76,10 @@ export default () =>
                         <img id="image_below" src={BelowImage}/>
                     </div>
                 </div>
-                <div className='footer'>
-                    <div className='footer_logo'>
-                        <img id="footer_image" src={UniGhanaLogo} className='logo'/>
-                        <p id="footer_text">UniGhana</p>
-                    </div>
-                    <p id="first" className='footer_paragraph'>Sources</p>
-                    <p className='footer_paragraph'>About Us</p>
-                    <p className='footer_paragraph'>Terms and Conditions</p>
-                    <div className='media'>
-                        <img id="first_logo" src={FacebookLogo} className='icon'/>
-                        <img src={WhatsappLogo} className='icon'/>
-                        <img src={YoutubeLogo} className='icon'/>
-                    </div>
-                </div>
+
+    
+                <Footer/>
+                
             </div>
-            </>
         )
     }
