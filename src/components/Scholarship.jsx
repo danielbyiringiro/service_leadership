@@ -2,6 +2,7 @@ import Header from "./Header"
 import Image from "../assets/scholarship.png"
 import "./Scholarship.css"
 import SearchIcon from "../assets/search_icon.png"
+import ScholarshipGrid from "./ScholarshipGrid"
 
 export default () =>
     {
@@ -19,38 +20,35 @@ export default () =>
                             <img id="scholarship_search_icon" src={SearchIcon}/>
                         </div>
                         <p id="scholarship_second_p">Scholarship Type</p>
-                        <label for="option1">
-                            <input type="checkbox" id="option1" name="options" value="option1"/>
-                            Full Scholarship
-                        </label>
-                        <br/>
-                        <label for="option2">
-                            <input type="checkbox" id="option2" name="options" value="option2"/>
-                            Partial Scholarship
-                        </label>
-                        <br/>
-                        <label for="option3">
-                            <input type="checkbox" id="option3" name="options" value="option3"/>
-                            Merit Based
-                        </label>
+                        <div className="row">
+                            <input type="checkbox" name="scholarships" value="full_scholarship"/>
+                            <p>Full Scholarship</p>
+                        </div>
+                        <div className="row">
+                            <input type="checkbox" name="scholarships" value="partial_scholarship"/>
+                            <p>Partial Scholarship</p>
+                        </div>
+                        <div className="row">
+                            <input type="checkbox" name="scholarships" value="merit_based"/>
+                            <p>Merit Based</p>
+                        </div>
                         <p id="scholarship_third_p">Schools</p>
-                        <label for="option1">
+                        <div className="row">
                             <input type="checkbox" id="option1" name="options" value="option1"/>
-                            University of Ghana
-                        </label>
-                        <br/>
-                        <label for="option2">
+                            <p>University of Ghana</p>
+                        </div>
+                        <div className="row">
                             <input type="checkbox" id="option2" name="options" value="option2"/>
-                            Ashesi University
-                        </label>
-                        <br/>
-                        <label for="option3">
+                            <p>Ashesi University</p>
+                        </div>
+                        <div className="row">
                             <input type="checkbox" id="option3" name="options" value="option3"/>
-                            Academic City
-                        </label>
+                            <p>Academic City</p>
+                        </div>
                     </div>
                     <div className="scholarship_right">
                         <p id="scholarship_big_text">Financial Aid</p>
+                        <ScholarshipGrid />
                     </div>
                 </div>
             </div>
