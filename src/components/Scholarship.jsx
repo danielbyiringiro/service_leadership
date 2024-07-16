@@ -3,6 +3,7 @@ import Image from "../assets/scholarship.png"
 import "./Scholarship.css"
 import SearchIcon from "../assets/search_icon.png"
 import ScholarshipGrid from "./ScholarshipGrid"
+import Footer from "./footer"
 
 export default () =>
     {
@@ -51,6 +52,7 @@ export default () =>
                         <ScholarshipGrid />
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }
