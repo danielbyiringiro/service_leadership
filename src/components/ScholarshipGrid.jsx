@@ -67,8 +67,7 @@ const scholarships = [
     }
 ]
 
-export default () =>
-{
+export default () => {
     return (
         <div className="scholarship-grid">
             {scholarships.map((scholarship, index) => (
@@ -76,25 +75,31 @@ export default () =>
                     <h3>{scholarship.title}</h3>
                     <p>{scholarship.description}</p>
                     <img src={scholarship.img_src} alt={`${scholarship.title} Logo`} />
+                    
                     <div className="progress">
                         <span className="label">Scholars</span>
-                        <div className="progress-bar">
-                            <div 
-                                className="progress-bar-fill"
-                                style={{width: `${scholarship.scholarsProgress}%`, backgroundColor: scholarship.progress_color}}
-                            ></div>
+                        <div className="progress_row">
+                            <div className="progress-bar">
+                                <div 
+                                    className="progress-bar-fill"
+                                    style={{width: `${scholarship.scholarsProgress}%`, backgroundColor: scholarship.progress_color}}
+                                ></div>
+                            </div>
+                            <div className="value">{scholarship.scholars}</div>
                         </div>
-                        <span className="value">{scholarship.scholars}</span>
                     </div>
+                    
                     <div className="progress">
                         <span className="label">Deadline</span>
-                        <div className="progress-bar">
-                            <div 
-                                className="progress-bar-fill"
-                                style={{width: `${scholarship.deadlineProgress}%`, backgroundColor: "#FFC107"}}
-                            ></div>
+                        <div className="progress_row">
+                            <div className="progress-bar">
+                                <div 
+                                    className="progress-bar-fill"
+                                    style={{width: `${scholarship.deadlineProgress}%`, backgroundColor: "#FFC107"}}
+                                ></div>
+                            </div>
+                            <div className="value">{scholarship.deadline}</div>
                         </div>
-                        <span className="value">{scholarship.deadline}</span>
                     </div>
                 </div>
             ))}
